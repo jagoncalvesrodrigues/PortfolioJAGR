@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import './normalize.css';
+import { COLORS } from '../constants/colors';
 export const GlobalStyles = createGlobalStyle`
     *,
     *::after,
@@ -25,9 +26,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        font-family: sans-serif;
+        font-family: "Manrope", sans-serif;
         margin: 0;
-        background-color: #333;
+        background-color: ${COLORS.black};
     }
 
 `;
