@@ -8,7 +8,7 @@ export const TECH =[
         '/assets/images/icons/typescript.svg',
         '/assets/images/icons/angular.svg',
         '/assets/images/icons/react.svg',
-        '/assets/images/icons/node.svg'
+        '/assets/images/icons/node.svg',
     ],
     [
         '/assets/images/icons/firebase.svg',

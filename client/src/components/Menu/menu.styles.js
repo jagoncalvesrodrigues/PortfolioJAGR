@@ -40,7 +40,7 @@ const StyledOptionsBox = styled.div`
 
 //MOBILE
 
-const StyledOptionMenu = styled.li`
+const StyledOptionMenu = styled(motion.li)`
     margin-bottom:10px ;
 `;
 const StyledMotionMenuMobile = styled(motion.div)`

@@ -19,8 +19,8 @@ const Menu = () => {
 			<StyledBoxMenu>
 				<img src='/assets/images/icons/Logo-wise.svg' alt='' />
 				<StyledOptionsBox>
-					<Link>About Me</Link>
-					<Link>Work</Link>
+					<Link to='/'>About Me</Link>
+					<Link to='/work'>Work</Link>
 					<Link>Contact</Link>
 				</StyledOptionsBox>
 				<StyledGameImg src='/assets/images/icons/game.svg' alt='' />
@@ -39,9 +39,19 @@ const Menu = () => {
 						transition={menuTransition}
 					>
 						<ul>
-							<StyledOptionMenu>About Me</StyledOptionMenu>
-							<StyledOptionMenu>Work</StyledOptionMenu>
-							<StyledOptionMenu>Contact</StyledOptionMenu>
+							<Link to='/'>
+								<StyledOptionMenu onClick={() => setToggleMenu(!toggleMenu)}>
+									About Me
+								</StyledOptionMenu>
+							</Link>
+							<Link to='/work'>
+								<StyledOptionMenu onClick={() => setToggleMenu(!toggleMenu)}>
+									Work
+								</StyledOptionMenu>
+							</Link>
+							<StyledOptionMenu onClick={() => setToggleMenu(!toggleMenu)}>
+								Contact
+							</StyledOptionMenu>
 						</ul>
 					</StyledMotionMenuMobile>
 				)}
