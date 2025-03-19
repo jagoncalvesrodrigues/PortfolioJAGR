@@ -1,3 +1,5 @@
+import { handleClick, handleDownload } from "./dowloadElements"
+
 export const TECH =[
     [
         '/assets/images/icons/html.svg',
@@ -13,7 +15,7 @@ export const TECH =[
         '/assets/images/icons/git.svg',
         '/assets/images/icons/mysql.svg',
         '/assets/images/icons/mongo.svg',
-        'public/assets/images/icons/github.svg'
+        '/assets/images/icons/github.svg'
     ],
     [
         '/assets/images/icons/figma.svg',
@@ -26,14 +28,17 @@ export const TECH =[
 export const PERSONAL=[
     {
         name:'CV',
-        img:'/assets/images/icons/cv.svg'
+        img:'/assets/images/icons/cv.svg',
+        link:() => handleDownload('public/assets/documents/CV-JuanGoncalves2025.pdf')
     },
     {
         name:'LINKEDIN',
-        img:'/assets/images/icons/linkedin.svg'
+        img:'/assets/images/icons/linkedin.svg',
+        link:() => handleClick('https://www.linkedin.com/in/juanantoniogoncalvesrodrigues/')
     },
     {
         name:'GITHUB',
-        img:'/assets/images/icons/github2.svg'
+        img:'/assets/images/icons/github2.svg',
+        link:() => handleClick('https://github.com/jagoncalvesrodrigues')
     }
 ]

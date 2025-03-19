@@ -92,10 +92,9 @@ const StyledTechnologiesBoxes = styled.div`
     height: 1014px;
     justify-content: space-between;
 `;
-const StyledImgTech = styled.img`
+const StyledImgTech = styled(motion.img)`
     width: 40px;
     height: 45px;
-    
 `;
 const StyledSingBoxTech = styled.div`
     background-color: ${COLORS.green600};

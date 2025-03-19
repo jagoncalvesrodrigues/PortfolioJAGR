@@ -81,7 +81,13 @@ const Home = () => {
 					{TECH.map((tech, techIndex) => (
 						<StyledSingBoxTech key={techIndex}>
 							{tech.map((icon, iconIndex) => (
-								<StyledImgTech key={iconIndex} src={icon} alt='' />
+								<StyledImgTech
+									key={iconIndex}
+									src={icon}
+									alt=''
+									whileHover={{ scale: 1.2 }}
+									whileTap={{ scale: 0.8 }}
+								/>
 							))}
 						</StyledSingBoxTech>
 					))}
@@ -89,7 +95,7 @@ const Home = () => {
 			</StyledBoxTechnologies>
 			<StyledBoxPersonalInfo>
 				{PERSONAL.map((personal, personalIndex) => (
-					<StyledInfoP>
+					<StyledInfoP key={personalIndex} onClick={personal.link}>
 						<StyledTitlePersonal>{personal.name}</StyledTitlePersonal>
 						<img src={personal.img} alt='' />
 					</StyledInfoP>
@@ -98,5 +104,4 @@ const Home = () => {
 		</StyledBoxHome>
 	);
 };
-
 export default Home;
