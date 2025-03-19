@@ -29,7 +29,7 @@ export const PERSONAL=[
     {
         name:'CV',
         img:'/assets/images/icons/cv.svg',
-        link:() => handleDownload('public/assets/documents/CV-JuanGoncalves2025.pdf')
+        link:() => handleDownload('/assets/documents/CV-JuanGoncalves2025.pdf')
     },
     {
         name:'LINKEDIN',
