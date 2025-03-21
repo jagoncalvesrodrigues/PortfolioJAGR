@@ -52,11 +52,15 @@ const StyledTechnologiesBoxes = styled.div`
     }
 `;
 const StyledImgTech = styled(motion.img)`
-    width: 40px;
-    height: 45px;
+    width: 35px;
+    height: 40px;
+    @media screen and (width >= 768px){
+        width: 40px;
+        height: 45px;
+    }
     @media screen and (width >= 1024px){
         width: 45px;
-    height: 50px;
+        height: 50px;
     }
 `;
 const StyledSingBoxTech = styled.div`
@@ -65,11 +69,12 @@ const StyledSingBoxTech = styled.div`
     padding: 30px 45px;
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 
     @media screen and (width >= 768px){
+        gap: 35px;
         width: 100%;
         height: 200px;
     }

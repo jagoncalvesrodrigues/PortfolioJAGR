@@ -1,27 +1,39 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
 	StyledBoxMainMenu,
 	StyledBoxMenu,
 	StyledButtonToggle,
 	StyledGameImg,
+	StyledLink,
 	StyledMotionMenuMobile,
 	StyledOptionMenu,
 	StyledOptionsBox
 } from './menu.styles';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { menuTransition, menuVariants } from '../../constants/motionVariants';
 
 const Menu = () => {
+	const location = useLocation();
+	const [activePath, setActivePath] = useState('');
 	const [toggleMenu, setToggleMenu] = useState(false);
+
+	useEffect(() => {
+		setActivePath(location.pathname);
+	}, [location]);
+
 	return (
 		<StyledBoxMainMenu>
 			<StyledBoxMenu>
 				<img src='/assets/images/icons/Logo-wise.svg' alt='' />
 				<StyledOptionsBox>
-					<Link to='/'>About Me</Link>
-					<Link to='/work'>Work</Link>
-					<Link>Contact</Link>
+					<StyledLink isActive={activePath === '/'} to='/'>
+						About Me
+					</StyledLink>
+					<StyledLink isActive={activePath === '/work'} to='/work'>
+						Work
+					</StyledLink>
+					<StyledLink>Contact</StyledLink>
 				</StyledOptionsBox>
 				<StyledGameImg src='/assets/images/icons/game.svg' alt='' />
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const StyledBoxMainMenu = styled.div`
     width: 100%;
@@ -27,6 +28,12 @@ const StyledGameImg = styled.img`
         width: 45px;
         display: flex;
     }
+`;
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s ease;
+    opacity: ${(props) => (props.isActive ? "0.5" : "1")};
 `;
 const StyledOptionsBox = styled.div`
     display: none;
@@ -60,4 +67,4 @@ const StyledMotionMenuMobile = styled(motion.div)`
     }
 `;
 
-export {StyledMotionMenuMobile,StyledGameImg,StyledOptionsBox,StyledOptionMenu,StyledBoxMainMenu,StyledBoxMenu,StyledButtonToggle}
+export {StyledLink,StyledMotionMenuMobile,StyledGameImg,StyledOptionsBox,StyledOptionMenu,StyledBoxMainMenu,StyledBoxMenu,StyledButtonToggle}
