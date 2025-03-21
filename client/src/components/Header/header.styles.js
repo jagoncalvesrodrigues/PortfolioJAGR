@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FONT_SIZE } from "../../constants/fonts";
 import { COLORS } from "../../constants/colors";
+import { motion } from "framer-motion";
 
 const StyledTitleHeader = styled.div`
     width: 100%;
@@ -16,7 +17,7 @@ const StyledTitleHeader = styled.div`
         padding: 40px;
     }
 `;
-const StyledTitle = styled.h1`
+const StyledTitle = styled(motion.h1)`
     color:${COLORS.green600};
     font-size: 3rem;
     font-weight: ${FONT_SIZE.Bold};
@@ -27,7 +28,7 @@ const StyledTitle = styled.h1`
         margin-top: 130px;
     }
 `;
-const StyledName = styled.h1`
+const StyledName = styled(motion.h2)`
     color:white;
     font-size: 1.25rem;
     font-weight: ${FONT_SIZE.Medium};
@@ -41,16 +42,21 @@ const StyledSubTitle = styled.h1`
     width: 180px;
     font-weight: ${FONT_SIZE.Medium};
     @media screen and (width >= 768px){
-        position: absolute;
         font-size: 1rem;
         width: 180px;
         left: 460px;
-        top: 38%;
+        margin-top: 16px;
     }
     @media screen and (width >= 1024px){
         left: 475px;
         top: 40.5%;
     }
 `;
+const StyledPositionText = styled.div`
+    @media screen and (width >= 768px){
+        display:flex;
+        gap: 10px;
+    }
+`;
 
-export {StyledName,StyledSubTitle,StyledTitle,StyledTitleHeader}
+export {StyledPositionText,StyledName,StyledSubTitle,StyledTitle,StyledTitleHeader}

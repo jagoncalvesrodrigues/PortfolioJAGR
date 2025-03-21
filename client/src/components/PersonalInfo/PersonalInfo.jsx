@@ -11,7 +11,7 @@ const PersonalInfo = () => {
 			{PERSONAL.map((personal, personalIndex) => (
 				<StyledInfoP key={personalIndex} onClick={personal.link}>
 					<StyledTitlePersonal>{personal.name}</StyledTitlePersonal>
-					<img src={personal.img} alt='' />
+					{<personal.img size={40} />}
 				</StyledInfoP>
 			))}
 		</StyledBoxPersonalInfo>

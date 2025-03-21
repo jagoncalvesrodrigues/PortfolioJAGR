@@ -51,9 +51,14 @@ const StyledTechnologiesBoxes = styled.div`
         flex-direction: row;
     }
 `;
-const StyledImgTech = styled(motion.img)`
+const StyledImageText = styled(motion.div)`
     width: 35px;
     height: 40px;
+
+    &:hover{
+        color:${COLORS.green900}
+    }
+
     @media screen and (width >= 768px){
         width: 40px;
         height: 45px;
@@ -84,4 +89,4 @@ const StyledSingBoxTech = styled.div`
     }
 `;
 
-export {StyledTitleTech,StyledBoxTechnologies,StyledBoxTitleTech,StyledImgTech,StyledSingBoxTech,StyledTechnologiesBoxes}
+export {StyledImageText,StyledTitleTech,StyledBoxTechnologies,StyledBoxTitleTech,StyledSingBoxTech,StyledTechnologiesBoxes}

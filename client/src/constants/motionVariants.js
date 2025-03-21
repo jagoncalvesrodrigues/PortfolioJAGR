@@ -10,3 +10,9 @@ export const menuTransition = {
 	damping: 15,
 	duration: 0.5,
 };
+
+export const transitionText = {
+duration: 2,
+delay: 0.5,
+ease: [0, 0.71, 0.2, 1.01],
+}

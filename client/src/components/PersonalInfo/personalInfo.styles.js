@@ -7,6 +7,10 @@ const StyledBoxPersonalInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap:30px;
+
+    @media screen and (width>=768px){
+        flex-direction: row;
+    }
 `;
 const StyledInfoP = styled.div`
     display: flex;
@@ -16,6 +20,16 @@ const StyledInfoP = styled.div`
     height: 100px;
     border: 2px solid ${COLORS.green600};
     color: white;
+
+    &:hover{
+        background-color: ${COLORS.green600};
+    }
+
+    @media screen and (width>=768px){
+        flex-direction:column;
+        width: 100%;
+        height: 200px;
+    }
 `;
 const StyledTitlePersonal = styled.p`
     font-weight: ${FONT_SIZE.Medium};

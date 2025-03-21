@@ -2,7 +2,7 @@ import { TECH } from '../../constants/technologies';
 import {
 	StyledBoxTechnologies,
 	StyledBoxTitleTech,
-	StyledImgTech,
+	StyledImageText,
 	StyledSingBoxTech,
 	StyledTechnologiesBoxes,
 	StyledTitleTech
@@ -17,14 +17,13 @@ const Techonologies = () => {
 			<StyledTechnologiesBoxes>
 				{TECH.map((tech, techIndex) => (
 					<StyledSingBoxTech key={techIndex}>
-						{tech.map((icon, iconIndex) => (
-							<StyledImgTech
-								key={iconIndex}
-								src={icon}
-								alt=''
+						{tech.map((IconComponent, iconIndex) => (
+							<StyledImageText
 								whileHover={{ scale: 1.2 }}
 								whileTap={{ scale: 0.8 }}
-							/>
+							>
+								{<IconComponent key={iconIndex} size={35} />}
+							</StyledImageText>
 						))}
 					</StyledSingBoxTech>
 				))}

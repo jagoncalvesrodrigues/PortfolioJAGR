@@ -1,44 +1,35 @@
+import { FaAngular, FaCss3Alt, FaFigma, FaGit, FaGithub, FaHtml5, FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa"
 import { handleClick, handleDownload } from "./dowloadElements"
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5"
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro, SiMongodb, SiTypescript } from "react-icons/si"
+import { PiReadCvLogoBold } from "react-icons/pi"
 
 export const TECH =[
     [
-        '/assets/images/icons/html.svg',
-        '/assets/images/icons/css.svg',
-        '/assets/images/icons/js.svg',
-        '/assets/images/icons/typescript.svg',
-        '/assets/images/icons/angular.svg',
-        '/assets/images/icons/react.svg',
-        '/assets/images/icons/node.svg',
+        FaHtml5,FaCss3Alt,IoLogoJavascript,FaReact,FaAngular,FaNodeJs
     ],
     [
-        '/assets/images/icons/firebase.svg',
-        '/assets/images/icons/git.svg',
-        '/assets/images/icons/mysql.svg',
-        '/assets/images/icons/mongo.svg',
-        '/assets/images/icons/github.svg'
+        IoLogoFirebase,SiMongodb,FaGit,FaGithub 
     ],
     [
-        '/assets/images/icons/figma.svg',
-        '/assets/images/icons/ps.svg',
-        '/assets/images/icons/illustrator.svg',
-        '/assets/images/icons/premiere.svg'
+        SiAdobephotoshop,SiAdobeillustrator,FaFigma,SiAdobepremierepro 
     ]
 ]
 
 export const PERSONAL=[
     {
         name:'CV',
-        img:'/assets/images/icons/cv.svg',
+        img:PiReadCvLogoBold ,
         link:() => handleDownload('/assets/documents/CV-JuanGoncalves2025.pdf')
     },
     {
         name:'LINKEDIN',
-        img:'/assets/images/icons/linkedin.svg',
+        img:FaLinkedin ,
         link:() => handleClick('https://www.linkedin.com/in/juanantoniogoncalvesrodrigues/')
     },
     {
         name:'GITHUB',
-        img:'/assets/images/icons/github2.svg',
+        img:FaGithub,
         link:() => handleClick('https://github.com/jagoncalvesrodrigues')
     }
 ]
