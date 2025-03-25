@@ -17,15 +17,19 @@ const InfoBio = () => {
 			<StyledBoxInfoBio>
 				<StyledParagraph>
 					<StyledParagraphBoldW>W</StyledParagraphBoldW>eb developer and
-					designer focused on finding solutions with a neat and simple look,
-					using frameworks such as{' '}
-					<StyledParagraphBold>React</StyledParagraphBold>,{' '}
-					<StyledParagraphBold>Angular</StyledParagraphBold>, my goal is to
-					offer the user a comfortable, attractive and enjoyable experience.
+					designer specialized in creating efficient digital solutions with a
+					careful and functional design, using technologies such as{' '}
+					<StyledParagraphBold>React</StyledParagraphBold> and{' '}
+					<StyledParagraphBold>Angular</StyledParagraphBold>. My background has
+					allowed me to develop projects that optimize the user experience and
+					bring value to every interaction.
 				</StyledParagraph>
 				<StyledParagraph>
-					I am characterized by good communication and teamwork, which I see
-					necessary when working in a team.
+					I am characterized by good communication, teamwork and a focus on
+					agile methodologies. I have collaborated with clients such as BBVA and
+					Carolina Herrera directly with the client. Also designing attractive
+					and functional interfaces that meet usability and performance
+					standards.
 				</StyledParagraph>
 			</StyledBoxInfoBio>
 		</StyledBoxBio>
