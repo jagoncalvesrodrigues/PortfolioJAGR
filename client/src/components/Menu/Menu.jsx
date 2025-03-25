@@ -22,6 +22,18 @@ const Menu = () => {
 		setActivePath(location.pathname);
 	}, [location]);
 
+	useEffect(() => {
+		if (toggleMenu) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+		// Cleanup para restaurar el scroll cuando el componente se desmonte
+		return () => {
+			document.body.style.overflow = 'auto';
+		};
+	}, [toggleMenu]);
+
 	return (
 		<StyledBoxMainMenu>
 			<StyledBoxMenu>
