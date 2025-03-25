@@ -33,7 +33,9 @@ const Menu = () => {
 					<StyledLink isActive={activePath === '/work'} to='/work'>
 						Work
 					</StyledLink>
-					<StyledLink>Contact</StyledLink>
+					<StyledLink as='a' href='mailto:jagoncalvesrodriguese@gmail.com'>
+						Contact
+					</StyledLink>
 				</StyledOptionsBox>
 				<StyledGameImg src='/assets/images/icons/game.svg' alt='' />
 
