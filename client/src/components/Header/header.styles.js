@@ -6,9 +6,10 @@ import { motion } from "framer-motion";
 const StyledTitleHeader = styled.div`
     width: 100%;
     padding: 20px;
-    height:686px;
+    height:70vh;
     font-family: "Barlow", sans-serif;
     @media screen and (width >= 768px){
+        height:686px;
         display: flex;
         flex-direction: column;
         padding: 20px;
